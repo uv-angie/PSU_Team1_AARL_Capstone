@@ -617,219 +617,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Potentiometer_US"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer_US"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Potentiometer, US symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resistor variable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Potentiometer_US_0_1"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_US_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -2404,18 +2191,6 @@
 		)
 	)
 	(rectangle
-		(start 351.79 201.93)
-		(end 383.54 233.68)
-		(stroke
-			(width 0.381)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 12db64bf-0219-44de-8a9e-01e4ab6e364a)
-	)
-	(rectangle
 		(start 41.91 118.11)
 		(end 91.44 193.04)
 		(stroke
@@ -2438,18 +2213,6 @@
 			(type none)
 		)
 		(uuid bac41aa4-cd51-46b0-9921-778dfb880d47)
-	)
-	(rectangle
-		(start 64.77 203.2)
-		(end 128.27 212.09)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid c4211016-75bc-49ce-91be-b8c577ebd3b0)
 	)
 	(rectangle
 		(start 105.41 76.2)
@@ -2495,17 +2258,7 @@
 		)
 		(uuid "75d6845c-5ac1-45ef-88d2-5f9fc6bef8a3")
 	)
-	(text "Replaced Trimming Potentiometer with an 8.2 Ohm Resistor\nsince the LW sensor currently hooked up to the circuit ranges\nfrom like 8 Ohms to 15 Ohms."
-		(exclude_from_sim no)
-		(at 96.774 207.772 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7637dab0-955f-4465-b895-fc76f75d9230")
-	)
-	(text "Cutoff Frequency at 50 Hz"
+	(text "Cutoff Frequency at 60 Hz"
 		(exclude_from_sim no)
 		(at 286.004 123.19 0)
 		(effects
@@ -2516,17 +2269,6 @@
 			)
 		)
 		(uuid "9accf4dc-f5dc-4659-8e8e-bf165bfd8f70")
-	)
-	(text "Linear Potentiometer"
-		(exclude_from_sim no)
-		(at 367.792 199.39 0)
-		(effects
-			(font
-				(size 1.651 1.651)
-				(thickness 0.2064)
-			)
-		)
-		(uuid "ba68eeab-939c-4db9-ba9e-ba3e0675b31a")
 	)
 	(text "Active Low-Pass Filter"
 		(exclude_from_sim no)
@@ -2673,26 +2415,6 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 218.44) (xy 363.22 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e8500b2-29c8-4138-895c-b0860eaa70c3")
-	)
-	(wire
-		(pts
-			(xy 345.44 149.86) (xy 355.6 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0eee5ccd-d674-4897-a46b-b66cc144415f")
-	)
-	(wire
-		(pts
 			(xy 187.96 88.9) (xy 187.96 124.46)
 		)
 		(stroke
@@ -2730,16 +2452,6 @@
 			(type default)
 		)
 		(uuid "22e7cf3f-97f6-4296-84d1-40248883d81a")
-	)
-	(wire
-		(pts
-			(xy 359.41 214.63) (xy 345.44 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f72da82-9328-4f64-a5ba-7ba17ce7c21e")
 	)
 	(wire
 		(pts
@@ -2983,16 +2695,6 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 214.63) (xy 345.44 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76282b00-38b8-4d30-b06f-61db916bf144")
-	)
-	(wire
-		(pts
 			(xy 66.04 88.9) (xy 66.04 127)
 		)
 		(stroke
@@ -3123,16 +2825,6 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 187.96) (xy 363.22 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af1124d8-a80e-4f0e-aa8d-ca89a18586f0")
-	)
-	(wire
-		(pts
 			(xy 132.08 85.09) (xy 132.08 111.76)
 		)
 		(stroke
@@ -3200,16 +2892,6 @@
 			(type default)
 		)
 		(uuid "d111ae68-ad0d-43b9-bc4c-68db5157821b")
-	)
-	(polyline
-		(pts
-			(xy 78.74 177.8) (xy 81.28 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d64c14f3-81e2-445b-8a73-6cd64b899a86")
 	)
 	(wire
 		(pts
@@ -3329,7 +3011,7 @@
 				)
 			)
 		)
-		(property "Value" "330k"
+		(property "Value" "27k"
 			(at 278.13 146.05 90)
 			(effects
 				(font
@@ -3594,7 +3276,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "44-54"
+		(property "Value" "5"
 			(at 57.15 173.9518 0)
 			(effects
 				(font
@@ -4165,7 +3847,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10"
+		(property "Value" "5"
 			(at 76.2 173.9899 0)
 			(effects
 				(font
@@ -4237,7 +3919,7 @@
 				)
 			)
 		)
-		(property "Value" "330k"
+		(property "Value" "27k"
 			(at 260.35 146.05 90)
 			(effects
 				(font
@@ -4504,7 +4186,7 @@
 				)
 			)
 		)
-		(property "Value" "48"
+		(property "Value" "120"
 			(at 152.4 166.37 90)
 			(effects
 				(font
@@ -4620,79 +4302,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer_US")
-		(at 363.22 214.63 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e0bdd089-a327-4ed2-b356-3c46d0bc49fa")
-		(property "Reference" "RV2"
-			(at 365.76 213.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Linear_Pot"
-			(at 365.76 215.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 363.22 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Potentiometer, US symbol"
-			(at 363.22 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1d0da09a-904a-46a2-88de-3f33f59c7570")
-		)
-		(pin "1"
-			(uuid "d7d05d4d-f0f8-42e5-a655-c6f02c35793d")
-		)
-		(pin "3"
-			(uuid "d99b9ae0-b804-4517-85f1-49fc1d128ddd")
-		)
-		(instances
-			(project ""
-				(path "/e06ad2b5-2cad-4e7a-b65c-42b4d2c7f012"
-					(reference "RV2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 53.34 133.35 0)
 		(unit 1)
@@ -4757,71 +4366,6 @@
 			(project ""
 				(path "/e06ad2b5-2cad-4e7a-b65c-42b4d2c7f012"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 363.22 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ea7ea0fa-0281-4873-ba33-42848da59f87")
-		(property "Reference" "#PWR05"
-			(at 363.22 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 367.538 224.028 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 363.22 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 363.22 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dffe5789-86a1-462c-accb-fcb747132b29")
-		)
-		(instances
-			(project "Rochelle_circuit"
-				(path "/e06ad2b5-2cad-4e7a-b65c-42b4d2c7f012"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)

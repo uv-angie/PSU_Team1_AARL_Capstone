@@ -7,9 +7,11 @@
 
 const int num_potentiometer = 12;       // how many potentiometers are there?
 const int num_press_sensor = 24;        // and how many pressure sensors?
-///////
+
+///////////////////////////////////////////////////////////////////////////////////
 const int num_lw_sensor = 6;            // how many liquidwire sensors are there?
-///////
+////////////////////////////////////////////////////////////////////////////////////
+
 //const int data_length = num_potentiometer + num_press_sensor;
 const int data_length = num_potentiometer + num_press_sensor + num_lw_sensor; //added the liquidwire sensors
 uint8_t sensor_data[data_length];       // storage array for all sensor data.
@@ -61,12 +63,14 @@ const int R_knee_joint_flx_muscle     = 14;
 const int R_ankle_joint_ext_muscle    = 16;
 const int R_ankle_joint_flx_muscle    = 17;
 
+////////////////////////////////////////////////
 const int lw1 = 0;
 const int lw2 = 1;
 const int lw3 = 2;
 const int lw4 = 3;
 const int lw4 = 4;
 const int lw6 = 5;
+//////////////////////////////////////////////////
 
 
 // --- Arrays for polling order (order used by Python) ---
@@ -97,11 +101,11 @@ const uint8_t press_mux_channel[num_press_sensor] = {
 };
 
 
-/////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 const uint8_t lw_mux_channels[num_lw_sensor] = {
   lw1, lw2, lw3, lw4, lw5, lw6
 };
-/////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
 
                // s0  s1  s2  s3
 CD74HC4067  mux(18, 17, 16, 15);  // create a new CD74HC4067 object with its four control pins
@@ -113,8 +117,13 @@ const int pressure_pin_1 = A5;              // read pin for the CD74HC4067
 CD74HC4067 pressure_mux_2(31, 30, 29, 28);  // create a new CD74HC4067 object 
 const int pressure_pin_2 = A13;             // read pin for the CD74HC4067
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 CD74HC4067 lw_mux(1, 1, 1, 1);  // create a new CD74HC4067 object, UPDATE control pins with available pins
 const int lw_pin = A; //UPDATE later with the actual pin
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 int raw_data; // raw data from serial.
 
@@ -149,10 +158,13 @@ void read_all_joints() {
         sensor_data[num_potentiometer + i] = analogRead(pressure_pin_2)/4; // read byte-sized data
     }    
   }
+  //////////////////////////////////////////////////
   for (int i = 0; i < num_lw_sensor; i++) {
     lw_mux.channel(lw_mux_channels[i]);
     analogRead(lw_pin); // Dummy read! Allows the Teensy ADC pin capacitor to charge
     sensor_data[i] = analogRead(lw_pin)/4; // read potentiometer data, byte-sized
+
+  //////////////////////////////////////////////////
   // // --- Printing (single dynamic row) ---
   // for (int i = 0; i < data_length; i++) {
   //   Serial.printf("%4d", i); // fixed width: 4 spaces
